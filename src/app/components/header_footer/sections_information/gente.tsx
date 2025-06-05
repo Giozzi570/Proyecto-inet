@@ -14,7 +14,7 @@ function Gente(){
                     <section>
                         <ul id='gente-container'>
                             {items.map((item,index) => (
-                                <li key={index} className={item.style}>
+                                <li key={index}  className={item.style}>
                                     {item.text}
                                 </li>
                             ) )}

@@ -4,13 +4,16 @@ import React, { useState } from 'react';
 import "./header.css";
 import Gente from './sections_information/gente';
 
-const stylePasive = "text-white cursor-pointer rounded-4xl font-medium py-2 px-4"
-const styleActive = "text-[#111117] cursor-pointer rounded-4xl bg-white font-medium py-2 px-4"
+// function ElementoARenderizar({ items }) => {
+
+// }
+const stylePasive = "lg:px-4 lg:py-3 p-8 text-white cursor-pointer rounded-4xl font-medium py-2 my-4 lg:my-0 px-4"
+const styleActive = "lg:px-4 lg:py-3 p-8 text-[#111117] cursor-pointer rounded-4xl bg-white font-medium py-2 my-4 lg:my-0 px-4"
 const items = [
-  { text: "Gente", style: styleActive },
-  { text: "Gente", style: stylePasive },
-  { text: "Gente", style: stylePasive },
-  { text: "Gente", style: stylePasive }
+  { text: "Integrantes", style: styleActive },
+  { text: "Planos", style: stylePasive },
+  { text: "Proyectos", style: stylePasive },
+  { text: "Presupuesto", style: stylePasive }
 ];
 function Header() {
    const [position, setPosition] = useState('translate(100%)');
@@ -25,7 +28,7 @@ function Header() {
         onClick={() => (setPosition(position === 'translate(100%)' ? 'translate(0%)' : 'translate(100%)'), setFilter(filter === 'blur(0px)' ? 'blur(18px)' : 'blur(0px)'))}
         
         type="button"
-        className="flex items-center justify-between w-8 py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:border-0 md:p-0 md:w-12 h-12 cursor-pointer
+        className="flex items-center justify-between py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:border-0 md:p-0 w-12 h-12 cursor-pointer
         "
         aria-controls="navbar-multi-level"
         aria-expanded="false"
@@ -53,10 +56,10 @@ function Header() {
            <div id='background'></div>
            <img id='image-background' src="https://r-charts.com/es/miscelanea/procesamiento-imagenes-magick_files/figure-html/color-fondo-imagen-r.png" alt="" />
         </div>
-        <div id='header-middle' className='w-4/6 h-screen flex flex-col'>
+        <div id='header-middle' className='w-4/6 h-screen flex lg:flex-col flex-col-reverse'>
                 <nav className='w-full p-6'>
                     <header>
-                        <ul className='flex justify-around gap-5'>
+                        <ul className='flex justify-around gap-5 overflow-x-scroll lg:overflow-hidden' id='ul-container-li'>
                             {items.map((item,index) => (
                                 <li key={index} className={item.style}>
                                     {item.text}
@@ -65,7 +68,7 @@ function Header() {
                         </ul>
                     </header>
                 </nav>
-                <Gente></Gente>
+                {/* {ElementoARenderizar()} */}
             </div>
         </div>
       </div>
