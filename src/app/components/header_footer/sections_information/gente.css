@@ -1,0 +1,9 @@
+#gente-container > li{
+    font-size: clamp(55px, 5vw, 7vh);
+    margin: 10px;
+
+    &:hover{
+        color: rgba(207, 221, 8, 0.603);
+        text-shadow: 12px;
+    }
+}

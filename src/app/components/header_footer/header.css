@@ -1,9 +1,65 @@
+#container-header{
+    transition: 2s all;
+}
+
 #header-middle{
-    position: absolute;
-    right: 0;
-    background: radial-gradient( #1c1829, #1b1828 8.61%, #191724 17.21%, #161520 25.82%, #14131c 34.42%, #121218 43.03%, #111117 51.63%);;
+    position: relative;
+    z-index: 30;
+    background: linear-gradient(
+  to left,
+  #1c1829 0%,
+  #1b1828 8.61%,
+  #191724 17.21%,
+  #161520 25.82%,
+  #14131c 34.42%,
+  #121218 43.03%,
+  #111117 51.63%
+    )
+}
+#content-middle{
+    background: #554d4d;
+    backdrop-filter: blur(150px) brightness(1.2) saturate(2.5);
 }
 #button-nav{
-    right: 40;
-    z-index: 1;
+    position: fixed;
+    right: 10;
+    top: 20;
+    z-index: 1000;
+    background: hsla(0, 0%, 0%, 0.74);
+    display: flex;
+    justify-content: center;
+    border-radius: 9999px;
+    transition: all 300ms;
+    color: #fff;
+    border : 1px solid #fff;
+    &:hover{
+        background: hsla(0, 2%, 9%, 0.171);
+        color: #000000;
+    }
+}
+#svg-nav{
+    position: fixed;
+}
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 10;
+  filter: blur(100px);
+}
+
+#image-background{
+  position: relative;
+  z-index: 20;
+  width: 300px;  /* Ajusta según tus necesidades */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
