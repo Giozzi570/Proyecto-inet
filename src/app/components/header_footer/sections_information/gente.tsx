@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useState } from 'react';
 import "./gente.css"
 const stylePasive = "text-white cursor-pointer rounded-4xl font-medium py-2 px-4"
 const items = [
