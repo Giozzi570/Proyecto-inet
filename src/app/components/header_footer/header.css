@@ -1,0 +1,9 @@
+#header-middle{
+    position: absolute;
+    right: 0;
+    background: radial-gradient( #1c1829, #1b1828 8.61%, #191724 17.21%, #161520 25.82%, #14131c 34.42%, #121218 43.03%, #111117 51.63%);;
+}
+#button-nav{
+    right: 40;
+    z-index: 1;
+}
