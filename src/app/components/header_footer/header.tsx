@@ -21,7 +21,7 @@ function Header() {
 
   return (
     <> 
-    <div className='flex'>
+    <div className='flex overflow-x-hidden'>
         <button
         id='button-nav'
         data-collapse-toggle="navbar-multi-level"

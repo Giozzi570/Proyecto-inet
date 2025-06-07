@@ -22,8 +22,6 @@
 }
 #button-nav{
     position: fixed;
-    right: 10px;
-    top: 20px;
     z-index: 1000;
     background: hsla(0, 0%, 0%, 0.74);
     display: flex;
