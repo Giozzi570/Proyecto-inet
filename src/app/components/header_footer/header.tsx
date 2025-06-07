@@ -3,9 +3,9 @@
 import React, { useState } from 'react';
 import "./header.css";
 import Gente from './sections_information/gente';
-
+import Planos from './sections_information/planos';
 // function ElementoARenderizar({ items }) => {
-
+//       const Elementos = [Gente]
 // }
 const stylePasive = "lg:px-4 lg:py-3 p-8 text-white cursor-pointer rounded-4xl font-medium py-2 my-4 lg:my-0 px-4"
 const styleActive = "lg:px-4 lg:py-3 p-8 text-[#111117] cursor-pointer rounded-4xl bg-white font-medium py-2 my-4 lg:my-0 px-4"
