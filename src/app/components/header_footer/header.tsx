@@ -68,7 +68,7 @@ function Header() {
                         </ul>
                     </header>
                 </nav>
-                {/* {ElementoARenderizar()} */}
+              <Planos></Planos>
             </div>
         </div>
       </div>
