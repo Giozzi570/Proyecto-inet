@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import "./header.css";
-import Gente from './sections_information/gente';
+// import Gente from './sections_information/gente';
 import Planos from './sections_information/planos';
 // function ElementoARenderizar({ items }) => {
 //       const Elementos = [Gente]

@@ -3,7 +3,6 @@
 import "./planos.css"
 import Download from "../../svgs/dowloand";
 import DriveButton from "../../svgs/drive_a";
-const stylePasive = "text-white cursor-pointer rounded-4xl font-medium py-2 px-4"
 
 function Planos(){
     return (
